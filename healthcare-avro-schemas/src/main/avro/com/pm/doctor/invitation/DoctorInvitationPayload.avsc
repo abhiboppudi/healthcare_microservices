@@ -1,0 +1,39 @@
+{
+  "type": "record",
+  "name": "DoctorInvitationPayload",
+  "namespace": "com.pm.doctor.invitation",
+  "doc": "Core invitation data carried across events",
+  "fields": [
+    {
+      "name": "invitationId",
+      "type": "string"
+    },
+    {
+      "name": "hospitalId",
+      "type": "long"
+    },
+    {
+      "name": "doctorId",
+      "type": "long"
+    },
+    {
+      "name": "invitation",
+      "type": "com.pm.doctor.invitation.Invitation"
+    },
+    {
+      "name": "invitedBy",
+      "type": "string"
+    },
+    {
+      "name": "expiresAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

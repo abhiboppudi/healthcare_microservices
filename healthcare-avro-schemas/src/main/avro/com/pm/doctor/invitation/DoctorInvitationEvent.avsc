@@ -1,0 +1,45 @@
+{
+  "type": "record",
+  "name": "DoctorInvitationEvent",
+  "namespace": "com.pm.doctor.invitation",
+  "doc": "Envelope for doctor invitation domain events",
+  "fields": [
+    {
+      "name": "eventId",
+      "type": "string"
+    },
+    {
+      "name": "eventType",
+      "type": {
+        "type": "enum",
+        "name": "DoctorInvitationEventType",
+        "symbols": [
+          "CREATED",
+          "RESENT",
+          "ACCEPTED",
+          "REJECTED",
+          "EXPIRED"
+        ]
+      }
+    },
+    {
+      "name": "occurredAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "producer",
+      "type": "string"
+    },
+    {
+      "name": "schemaVersion",
+      "type": "string"
+    },
+    {
+      "name": "payload",
+      "type": "com.pm.doctor.invitation.DoctorInvitationPayload"
+    }
+  ]
+}

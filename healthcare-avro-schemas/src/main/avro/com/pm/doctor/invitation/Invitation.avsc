@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "Invitation",
+  "namespace": "com.pm.doctor.invitation",
+  "fields": [
+    {
+      "name": "status",
+      "type": "com.pm.common.constant.InvitationStatus"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "DoctorInvitationKey",
+  "namespace": "com.pm.doctor.invitation",
+  "doc": "Kafka message key for doctor invitation events",
+  "fields": [
+    {
+      "name": "invitationId",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "enum",
+  "name": "InvitationStatus",
+  "namespace": "com.pm.common.constant",
+  "symbols": [
+    "PENDING",
+    "ACCEPTED",
+    "CANCELLED",
+    "REJECTED"
+  ]
+}

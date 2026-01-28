@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "DoctorInvitaionResponseEvent",
+  "namespace": "com.pm.doctor.invitation.response",
+  "fields": [
+    {
+      "name": "eventId",
+      "type": "string"
+    },
+    {
+      "name": "eventType",
+      "type": "string"
+    },
+    {
+      "name": "eventTimestamp",
+      "type": "string"
+    },
+    {
+      "name": "payload",
+      "type": "com.pm.doctor.invitation.response.DoctorInvitationResponsePayload"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "DoctorInvitationResponsePayload",
+  "namespace": "com.pm.doctor.invitation.response",
+  "fields": [
+    {
+      "name": "invitationId",
+      "type": "long"
+    },
+    {
+      "name": "hospitalId",
+      "type": "long"
+    },
+    {
+      "name": "doctorId",
+      "type": "long"
+    },
+    {
+      "name": "invitation",
+      "type": "com.pm.doctor.invitation.Invitation"
+    }
+  ]
+}

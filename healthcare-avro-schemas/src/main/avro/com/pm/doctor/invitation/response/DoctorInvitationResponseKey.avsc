@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "DoctorInvitationResponseKey",
+  "namespace": "com.pm.doctor.invitation.response",
+  "fields": [
+    { "name": "invitationId", "type": "string" }
+  ]
+}

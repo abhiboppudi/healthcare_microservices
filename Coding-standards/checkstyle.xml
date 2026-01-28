@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+
+    <!-- Global rules (Checker-level) -->
+    <module name="LineLength">
+        <property name="max" value="120"/>
+    </module>
+
+    <!-- TreeWalker handles AST-based checks -->
+    <module name="TreeWalker">
+
+        <!-- Naming conventions -->
+        <module name="TypeName"/>
+        <module name="MethodName"/>
+        <module name="ParameterName"/>
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
+
+        <!-- Imports -->
+        <module name="AvoidStarImport"/>
+        <module name="UnusedImports"/>
+
+        <!-- Indentation -->
+        <module name="Indentation">
+            <property name="basicOffset" value="2"/>
+            <property name="braceAdjustment" value="0"/>
+            <property name="caseIndent" value="2"/>
+            <property name="tabWidth" value="2"/>
+        </module>
+
+        <!-- Braces -->
+        <module name="NeedBraces"/>
+        <module name="LeftCurly"/>
+        <module name="RightCurly"/>
+
+        <!-- Javadoc -->
+
+        <!-- Misc -->
+        <module name="FinalClass"/>
+        <module name="EqualsHashCode"/>
+        <module name="MagicNumber"/>
+
+        <!-- Complexity rules -->
+        <module name="CyclomaticComplexity">
+            <property name="max" value="10"/>
+        </module>
+        <module name="NPathComplexity">
+            <property name="max" value="50"/>
+        </module>
+        <module name="MethodLength">
+            <property name="max" value="40"/>
+        </module>
+        <module name="ClassDataAbstractionCoupling">
+            <property name="max" value="10"/>
+        </module>
+        <module name="ClassFanOutComplexity">
+            <property name="max" value="50"/>
+        </module>
+        <module name="EmptyLineSeparator">
+            <property name="allowMultipleEmptyLines" value="true"/>
+        </module>
+
+
+        <!-- Design rules -->
+        <!--        <module name="VisibilityModifier"/>-->
+        <!--        <module name="HideUtilityClassConstructor"/>-->
+        <module name="InterfaceIsType"/>
+        <module name="OneTopLevelClass"/>
+    </module>
+</module>
